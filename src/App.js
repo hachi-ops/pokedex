@@ -63,11 +63,11 @@ const BestPokemon = () => {
   return (
     <div>
 <p>My favourite pokemon is not Pidgey</p>
-<uL>
+<ul>
   {abilities.map((name, index) => (
     <li key = {index} > {name}</li>
   ))}
-</uL>
+</ul>
     </div>
   );
 };
