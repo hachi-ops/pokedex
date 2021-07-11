@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Logo = () => {
     const appName = "Helen's Pokemon";
   return (
