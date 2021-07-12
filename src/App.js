@@ -4,17 +4,21 @@ import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 
 function App() {
+  const abilities = ["Anticipation", "Adaptability", "Run-Away"];
+  const date = new Date().toLocaleDateString();
+  const date2 = new Date().toLocaleDateString(-1);
   return (
     <div>
-      <Logo/>
-      <BestPokemon/>
-      <CaughtPokemon/>
+      <Logo appName="Pokedex"/>
+      <BestPokemon abilities = {abilities}/>
+      <CaughtPokemon date = {date}/>
+      <CaughtPokemon date = {date2}/>
     </div>
   );
 }
 
 // function Logo() {
-//   const appName = "Hachi's Pokemon";
+//   const appName = "Helen's Pokemon";
 //   return (
 //     <div>
 //       <header>
