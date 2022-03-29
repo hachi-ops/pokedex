@@ -1,8 +1,6 @@
 import React from "react";
 
-
 const Logo = (props) => {
-
   return (
      <header>
       <h1>Welcome to {props.appName}</h1>
