@@ -7,12 +7,13 @@ function App() {
     const logWhenClicked = () => {
     console.log("clicked");
   };
-
+  const abilities = ['Anticipation', 'Adaptability', 'Run-Away'];
+  const todaysDate = new Date().toLocaleDateString();
   return (
     <div>
       <Logo appName="Pokedex" handleClick={logWhenClicked}/>
-      <BestPokemon  abilities = {['Anticipation', 'Adaptability', 'Run-Away']}/>
-      <CaughtPokemon todaysDate = {new Date().toLocaleDateString()}/>
+      <BestPokemon  abilities = {abilities}/>
+      <CaughtPokemon todaysDate = {todaysDate}/>
     </div>
     );
   }
